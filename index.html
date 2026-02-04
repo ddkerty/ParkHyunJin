@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박현진의 링크트리</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
+        <button id="share-button" class="share-button" title="공유하기">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
         <header class="profile-section">
-            <button id="share-button" class="share-button" title="공유하기">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            </button>
             <img src="assets/images/profile.jpg" alt="박현진 프로필 이미지" class="profile-image">
             <h1>박현진</h1>
             <p>아이디어를 현실로, 바이브 코더 제작 아카이브</p>
         </header>
 
-<main class="links-section">
-    <button class="link-button" data-url="https://github.com/ddkerty/ddkerty"><i class="fa-brands fa-github"></i>GitHub</button>
-    
-    <button class="link-button" data-url="https://stock-eight-xi.vercel.app/"><i class="fa-solid fa-chart-line"></i> 주식 분석 페이지</button>
+        <main class="links-section">
+            <button class="link-button" data-url="https://github.com/ddkerty/ddkerty"><i
+                    class="fa-brands fa-github"></i>GitHub</button>
+
+            <button class="link-button" data-url="https://stock-eight-xi.vercel.app/"><i
+                    class="fa-solid fa-chart-line"></i> 주식 분석 페이지</button>
 
             <!-- 주식 앱: Google Play (차트 앱) -->
-    <button class="link-button" data-url="https://play.google.com/store/apps/details?id=com.antigravity.breathingmarket">
-      <i class="fa-solid fa-chart-line"></i> 마켓 바이브 (Google Play)
-    </button>
+            <button class="link-button"
+                data-url="https://play.google.com/store/apps/details?id=com.antigravity.breathingmarket">
+                <i class="fa-solid fa-chart-line"></i> 마켓 바이브 (Google Play)
+            </button>
 
-    <!-- 메모 앱: Google Play -->
-    <button class="link-button" data-url="https://play.google.com/store/apps/details?id=com.hyunjin.memometalk&utm_source=threads&utm_medium=social&utm_content=link_in_bio">
-      <i class="fa-solid fa-sticky-note"></i> 메모미톡 (Google Play)
-    </button>
-    
-    <button class="link-button" data-url="https://open.kakao.com/o/s5CtJbDh"><i class="fa-solid fa-comments"></i> 오픈채팅 문의</button>  
+            <!-- 메모 앱: Google Play -->
+            <button class="link-button"
+                data-url="https://play.google.com/store/apps/details?id=com.hyunjin.memometalk&utm_source=threads&utm_medium=social&utm_content=link_in_bio">
+                <i class="fa-solid fa-sticky-note"></i> 메모미톡 (Google Play)
+            </button>
 
-</main>
+            <button class="link-button" data-url="https://open.kakao.com/o/s5CtJbDh"><i
+                    class="fa-solid fa-comments"></i> 오픈채팅 문의</button>
+
+        </main>
 
         <footer class="footer">
             <p>&copy; 2025 made by 박현진. All rights reserved.</p>
@@ -45,4 +54,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

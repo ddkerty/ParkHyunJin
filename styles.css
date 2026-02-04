@@ -97,7 +97,8 @@ body {
     font-size: 1.2rem;
     color: #555;
     transition: all 0.3s ease;
-    z-index: 10;
+    z-index: 100;
+    /* 더 높은 z-index 부여 */
 }
 
 .share-button:hover {
