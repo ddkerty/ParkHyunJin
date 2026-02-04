@@ -24,4 +24,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 공유 버튼 기능을 추가합니다.
+    const shareButton = document.getElementById('share-button');
+    if (shareButton) {
+        shareButton.addEventListener('click', async () => {
+            const shareData = {
+                title: '박현진의 링크트리',
+                text: '박현진의 포트폴리오와 SNS 링크를 확인해보세요!',
+                url: window.location.href
+            };
+
+            try {
+                // Web Share API가 지원되는지 확인하고 호출합니다 (주로 모바일 환경)
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else {
+                    // 지원되지 않는 경우 (데스크탑 등) 클립보드에 복사합니다.
+                    await navigator.clipboard.writeText(window.location.href);
+                    alert('링크가 클립보드에 복사되었습니다!');
+                }
+            } catch (err) {
+                console.error('공유 중 오류가 발생했습니다:', err);
+            }
+        });
+    }
 });
